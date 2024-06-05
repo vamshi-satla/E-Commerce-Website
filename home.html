@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Home Page</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+	justify-content:center;
+}
+.video-background{
+        position:fixed;
+        right:0;
+        bottom:0;
+        min-width:100%;
+        min-height: 100%;
+        z-index:-1;
+  }
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+}
+
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+	padding:20px;
+	
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.product {
+    max-width:100%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width:100%;
+	position:relative;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.product img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+.product h2 {
+    color: #333;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 18px;
+    color: #555;
+}
+
+.product button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.product button:hover {
+    background-color: #218838;
+}
+    </style>
+</head>
+<body>  
+</head>
+<body>
+<video autoplay muted loop class="video-background">
+        <source src="https://www.shutterstock.com/shutterstock/videos/1081905350/preview/stock-footage-omni-channel-technology-of-online-retail-business-method-multichannel-marketing-on-social-media.webm" type="video/mp4">
+        Your browser dose not support the video tag.
+		</video>
+ <h1>Wellcome To Store </h1>
+ <ul>
+ <li><a href="#Fossil" class="link">Fossil</a></li>
+ <li><a href="#Rolex" class="link">Rolex</a></li>
+ <li><a href="#Iphone 14" class="link">Iphone 14</a></li>
+ <li><a href="#Iphone 15" class="link">Iphone 15</a></li>
+ <li><a href="#Redmi 12" class="link">Redmi 12</a></li>
+ <li><a href="#Samsung s22" class="link">Samsung s22</a></li>
+ <li><a href="#Ray-Ban" class="link">Ray-Ban</a></li>
+ <li><a href="#Oakley" class="link">Oakley</a></li>
+  <li><a href="#Boat" class="link">Boat</a></li>
+  <li><a href="#Noise" class="link">Noise</a></li>
+  <li><a href="#LG" class="link">LG</a></li>
+    <li><a href="#IFB" class="link">IBF</a></li>
+ </ul>
+ <div class="nav-bottom">
+      <a href="cartpage.html">Cart</a>
+	  </div>
+	  
+    <div class="container">
+        <h2>Featured Products</h2>
+		<div>
+        <div class="product" id="Fossil">
+		<img src="https://i5.walmartimages.com/asr/8239ed97-4977-4ef8-b5fd-a6787826559d_1.9bbed05c44e9135105d29c5145e56033.jpeg" width="200"height="280" alt="Fossil">         
+        <h2>Fossil</h2>
+            <p>Price: $19.99</p>
+			<button onclick="Buy('Fossil')"> Buy </button>
+			<button onclick="addToCart('Fossil')"> Add to cart </button>
+		</div>	
+		<div>
+        <div class="product" id="Rolex">
+		<img src="http://1.bp.blogspot.com/-REYaihuU8KI/UpRBeh8YTeI/AAAAAAAAD-c/plFgzKZwKq0/s1600/Vintage-Rolex-watches-UK-Collection-for-Men-Fashion(6).jpg" width="200"height="280" alt="Rolex"> 
+		<h2>Rolex</h2>
+            <p>Price: $30.99</p>
+			<button onclick="Buy('Rolex')"> Buy </button>
+			<button onclick="addToCart('Rolex')"> Add to cart </button>
+            
+        </div>
+       <div class="product" id="Iphone 14">
+	  <img src=" https://static.toiimg.com/thumb/resizemode-4,msid-80635321,width-1070/80635321.jpg"width="200" height="250" alt ="Iphone 14">
+            <h2>Iphone 14</h2>
+			<p>Price: $20.99</p>
+			<button onclick="Buy('Iphone14')"> Buy </button>
+			<button onclick="addToCart('Iphone14')"> Add to cart </button>
+		</div>	
+			<div class="product" id="Iphone 15">
+	  <img src=" https://cdn.iphoneincanada.ca/wp-content/uploads/2023/01/iphone-15-conmcept.jpg"width="200" height="250" alt ="Iphone 15">
+            <h2>Iphone 15</h2>
+			<p>Price: $35.99</p>
+			<button onclick="Buy('Iphone 15')"> Buy </button>
+			<button onclick="addToCart('Iphone 15')"> Add to cart </button>
+        </div>
+		 <div class="product" id="Redmi 12">
+		 <img src="https://telesintese.com.br/wp-content/uploads/2023/09/Xiaomi-Redmi-12-5G-smartphone.jpg" width="200" height="250" alt ="Redmi 12">
+		 <h2>Redmi 12</h2>
+            <p>Price: $5.99</p>
+			<button onclick="Buy('Redmi 12')"> Buy </button>
+			<button onclick="addToCart('Redmi 12')"> Add to cart </button>
+        </div>
+		<div class="product" id="Samsung s22">
+		 <img src=" https://nl.letsgodigital.org/uploads/2021/12/samsung-galaxy-s22-ultra-5g.jpg" width="200" height="250" alt ="Samsung s22">   
+		 <h2>Samsung s22</h2>
+            <p>Price: $20.99</p>
+			<button onclick="Buy('Samsung s22')"> Buy </button>
+			<button onclick="addToCart('Samsung s22')"> Add to cart </button>
+        </div>
+		 <div class="product" id="Ray-Ban">
+		 <img src="https://i.redd.it/pheu8vf896dz.jpg" width="200" height="250" alt ="Ray-Ban">
+		 <h2>Ray-Ban</h2>
+            <p>Price: $10.99</p>
+			<button onclick="Buy('Ray-Ban')"> Buy </button>
+			<button onclick="addToCart('Ray-Ban')"> Add to cart </button>
+        </div>
+		<div class="product" id="Oakley">
+		 <img src="https://badasshelmetstore.com/wp-content/uploads/2016/07/Oakley-Gascan-Sunglasses.jpg" width="200" height="250" alt ="Oakley">
+		 <h2>Oakley</h2>
+            <p>Price: $15.99</p>
+			<button onclick="Buy('Oakley')"> Buy </button>
+			<button onclick="addToCart('Oakley')"> Add to cart </button>
+        </div>
+	
+	 <div class="product" id="Boat Headphones">
+		 <img src="https://amdigital.in/wp-content/uploads/2021/05/05-17-1024x1024.jpg"width="280" height="310" alt="Boat Headphones">
+            <h2>Boat Headphones</h2>
+            <p>Price: $5.99</p>
+			<button onclick="Buy('Boat Headphones')"> Buy </button>
+			<button onclick="addToCart('Boat Headphones')"> Add to cart </button>
+			</div>
+			<div class="product" id="Noise Earbuds">
+		 <img src="https://cdn1.smartprix.com/rx-iF70NDPbW-w1200-h1200/F70NDPbW.jpg"width="280" height="310" alt="Noise Earbuds">
+            <h2>Noise Earbuds</h2>
+            <p>Price: $4.99</p>
+			<button onclick="Buy('Noise Earbuds')"> Buy </button>
+			<button onclick="addToCart('Noise Earbuds')"> Add to cart </button>
+			</div>
+	 <div class="product" id="LG Air Conditioner">
+	      <img src="http://assets.hardwarezone.com/img/2014/02/LG_Inverter_AC_2.jpg"width="260" height"280" alt="LG Air Conditioner">
+            <h2>LG Air Conditioner</h2>
+			<p>Price: $25.99</p>
+			<button onclick="Buy('LG Air Conditioner')"> Buy </button>
+			<button onclick="addToCart('LG Air Conditioner')"> Add to cart </button>
+			</div>
+			<div class="product" id="IFB Air Conditioner">
+	      <img src="https://3.imimg.com/data3/IF/NI/MY-10550088/air-conditioners-ifb-inverter-technology-based-1000x1000.jpg"width="260" height"280" alt="IFB Air Conditioner">
+            <h2>IFB Air Conditioner</h2>
+			<p>Price: $28.99</p>
+			<button onclick="Buy('IFB Air Conditioner')"> Buy </button>
+			<button onclick="addToCart('IFB Air Conditioner')"> Add to cart </button>
+			</div>
+	</div>
+	<script>
+	function addToCart(product) {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push(product);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(product + ' has been added to the cart.');
+        }
+		function checkLoginStatus() {
+            const loggedIn = JSON.parse(localStorage.getItem('loggedIn')) || false;
+            if (!loggedIn) {
+                window.location.href = 'index.html';
+            }
+        }
+	
+	
+	</script>
+</body>
+</html>
